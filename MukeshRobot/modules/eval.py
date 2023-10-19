@@ -1,6 +1,6 @@
 """MIT License
 
-Copyright (c) 2023-24 Noob-Mukesh
+Copyright (c) 2023-24 Tp_editz
 
           GITHUB: Tp_editz
           TELEGRAM: @Tp_Editz
