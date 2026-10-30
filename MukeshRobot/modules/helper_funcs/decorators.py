@@ -54,7 +54,7 @@ class MukeshTelegramHandler:
                         group,
                     )
                 LOGGER.debug(
-                    f"[MukeshCmd] Loaded handler {command} for function {func.__name__} in group {group}"
+                    f"[TPEditzCmd] Loaded handler {command} for function {func.__name__} in group {group}"
                 )
             except TypeError:
                 if can_disable:
@@ -81,7 +81,7 @@ class MukeshTelegramHandler:
                         )
                     )
                 LOGGER.debug(
-                    f"[MukeshCMd] Loaded handler {command} for function {func.__name__}"
+                    f"[TPEditzCmd] Loaded handler {command} for function {func.__name__}"
                 )
 
             return func
@@ -110,7 +110,7 @@ class MukeshTelegramHandler:
                         MessageHandler(pattern, func, run_async=run_async), group
                     )
                 LOGGER.debug(
-                    f"[MukeshMsg] Loaded filter pattern {pattern} for function {func.__name__} in group {group}"
+                    f"[TPEditzMsg] Loaded filter pattern {pattern} for function {func.__name__} in group {group}"
                 )
             except TypeError:
                 if can_disable:
@@ -124,7 +124,7 @@ class MukeshTelegramHandler:
                         MessageHandler(pattern, func, run_async=run_async)
                     )
                 LOGGER.debug(
-                    f"[MukeshRobot-Msg] Loaded filter pattern {pattern} for function {func.__name__}"
+                    f"[TPEditz-Msg] Loaded filter pattern {pattern} for function {func.__name__}"
                 )
 
             return func
@@ -139,7 +139,7 @@ class MukeshTelegramHandler:
                 )
             )
             LOGGER.debug(
-                f"[MukeshRobot-Callback] Loaded callbackquery handler with pattern {pattern} for function {func.__name__}"
+                f"[TPEditz-Callback] Loaded callbackquery handler with pattern {pattern} for function {func.__name__}"
             )
             return func
 
@@ -165,7 +165,7 @@ class MukeshTelegramHandler:
                 )
             )
             LOGGER.debug(
-                f"[MukeshINLINE] Loaded inlinequery handler with pattern {pattern} for function {func.__name__} | PASSES "
+                f"[TPEditzInline] Loaded inlinequery handler with pattern {pattern} for function {func.__name__} | PASSES "
                 f"USER DATA: {pass_user_data} | PASSES CHAT DATA: {pass_chat_data} | CHAT TYPES: {chat_types}"
             )
             return func
