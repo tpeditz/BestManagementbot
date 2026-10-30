@@ -48,7 +48,7 @@ def slap(update: Update, context: CallbackContext):
     user_id = extract_user(message, args)
 
     if user_id == bot.id:
-        temp = random.choice(fun_strings.SLAP_MUKESH_TEMPLATES)
+        temp = random.choice(fun_strings.SLAP_BOT_TEMPLATES)
 
         if isinstance(temp, list):
             if temp[2] == "tmute":
@@ -84,7 +84,7 @@ def slap(update: Update, context: CallbackContext):
     throw = random.choice(fun_strings.THROW)
 
     if update.effective_user.id == OWNER_ID:
-        temp = "@legend_coder scratches {user2}"
+        temp = "@Tp_Editz scratches {user2}"
 
     reply = temp.format(user1=user1, user2=user2, item=item, hits=hit, throws=throw)
 
