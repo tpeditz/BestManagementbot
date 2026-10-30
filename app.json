@@ -1,14 +1,13 @@
 {
-    "name": "Mukesh Robot",
-    "description": "Telegram Group Management Bot.",
-    "logo": "https://te.legra.ph/file/49c43e6fc856534a09853.jpg",
+    "name": "TP Editz Group Manager",
+    "description": "TP Editz Telegram Group Management Bot.",
     "keywords": [
        "telegram",
        "modular",
        "group",
        "manager"
     ],   
- "repository": "https://github.com",
+ "repository": "https://github.com/tpeditz/BestManagementbot",
  "stack": "heroku-22",
  "addons": [
     {
