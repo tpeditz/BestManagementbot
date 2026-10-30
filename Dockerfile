@@ -64,11 +64,11 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-RUN git clone https://github.com/Noob-Mukesh/MukeshRobot /root/MukeshRobot
-WORKDIR /root/MukeshRobot
+RUN git clone https://github.com/tpeditz/BestManagementbot.git /root/BestManagementbot
+WORKDIR /root/BestManagementbot
 
-#Copy config file to /root/MukeshRobot/MukeshRobot
-COPY ./MukeshRobot/config.py ./MukeshRobot/config.py* /root/MukeshRobot/MukeshRobot/
+# Copy config file into the bot's existing Python package directory
+COPY ./MukeshRobot/config.py ./MukeshRobot/config.py* /root/BestManagementbot/MukeshRobot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
