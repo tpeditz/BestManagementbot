@@ -1,16 +1,13 @@
 <h1 align="center">ᴛᴘ ᴇᴅɪᴛᴢ</h1>
 <p align="center">
-  <img src="https://github.com/Noob-Mukesh/MukeshRobot/blob/main/MukeshRobot/resources/mukesh.jpg">
-</p>
-<p align="center">
-<a href="https://github.com/Noob-Mukesh/MukeshRobot/stargazers"><img src="https://img.shields.io/github/stars/Noob-Mukesh/MukeshRobot?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
-<a href="https://github.com/Noob-Mukesh/MukeshRobot/network/members"> <img src="https://img.shields.io/github/forks/Noob-Mukesh/MukeshRobot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
-<a href="https://github.com/Noob-Mukesh/MukeshRobot/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
+<a href="https://github.com/tpeditz/BestManagementbot/stargazers"><img src="https://img.shields.io/github/stars/Noob-Mukesh/MukeshRobot?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
+<a href="https://github.com/tpeditz/BestManagementbot/network/members"> <img src="https://img.shields.io/github/forks/Noob-Mukesh/MukeshRobot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/tpeditz/BestManagementbot/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-skyblue?style=for-the-badge&logo=python" alt="Python" /> </a>
 <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=white&label=telethon&logo=python&logoColor=blue&style=for-the-badge" /></a>
 <a href="https://pypi.org/project/Pyrogram/"> <img src="https://img.shields.io/pypi/v/pyrogram?color=white&label=pyrogram&logo=python&logoColor=blue&style=for-the-badge" /></a>
-<a href="https://github.com/Noob-Mukesh/MukeshRobot"> <img src="https://img.shields.io/github/repo-size/Noob-Mukesh/MukeshRobot?color=skyblue&logo=github&logoColor=blue&style=for-the-badge" /></a>
-<a href="https://github.com/Noob-Mukesh/MukeshRobot/commits/Noob-Mukesh "> <img src="https://img.shields.io/github/last-commit/Noob-Mukesh/MukeshRobot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
+<a href="https://github.com/tpeditz/BestManagementbot"> <img src="https://img.shields.io/github/repo-size/Noob-Mukesh/MukeshRobot?color=skyblue&logo=github&logoColor=blue&style=for-the-badge" /></a>
+<a href="https://github.com/tpeditz/BestManagementbot/commits/main"> <img src="https://img.shields.io/github/last-commit/Noob-Mukesh/MukeshRobot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 </p>
 
 ━━━━━━━━━━━━━━━━━━━━
@@ -56,7 +53,7 @@
 - Install pip by :
 `sudo pip3 install -U pip`
 - Clone the repository by :
-`git clone https://github.com/Noob-Mukesh/MukeshRobot && cd MukeshRobot`
+`git clone https://github.com/tpeditz/BestManagementbot.git && cd BestManagementbot`
 - Install/Upgrade setuptools by :
 `pip3 install --upgrade pip setuptools`
 - Install requirements by :
@@ -90,7 +87,7 @@ Press `Ctrl+b` and then `d`
 ```py
 #ᴀᴅᴅ ʟɪᴄᴇɴsᴇ ᴛᴇxᴛ ʜᴇʀᴇ ɢᴇᴛ ɪᴛ ғʀᴏᴍ ʙᴇʟᴏᴡ.
 
-from TpEditz import pbot as TpEditz # This is bot's client
+from MukeshRobot import pbot # This is the bot client
 from pyrogram import filters # pyrogram filters
 
 
@@ -100,15 +97,15 @@ __mod_name__ = "Module Name"
 __help__ = "Module help message"
 
 
-@mukesh.on_message(filters.command("start"))
+@pbot.on_message(filters.command("start"))
 async def some_function(_, message):
     await message.reply_text("ɪ'ᴍ.ᴀʟɪᴠᴇ ʙᴀʙʏ❣️!!")
 
-# ᴍᴀɴʏ ᴜsᴇғᴜʟ ғᴜɴᴄᴛɪᴏɴs ᴀʀᴇ ɪɴ, TpEditz/utils/, TpEditz, and multifunction bot/modules/
+# ᴍᴀɴʏ ᴜsᴇғᴜʟ ғᴜɴᴄᴛɪᴏɴs ᴀʀᴇ ɪɴ, MukeshRobot/utils/, MukeshRobot/, and MukeshRobot/modules/
 ```
 
 <h3 align="center"> 
- ᴀɴᴅ ᴘᴜᴛ ᴛʜɪs ғɪʟᴇ ɪɴ Multifunctionbot/modules/, ʀᴇsᴛᴀʀᴛ ᴀɴᴅ ᴛᴇsᴛ ʏᴏᴜʀ ʙᴏᴛ.
+ ᴀɴᴅ ᴘᴜᴛ ᴛʜɪs ғɪʟᴇ ɪɴ MukeshRobot/modules/, ʀᴇsᴛᴀʀᴛ ᴀɴᴅ ᴛᴇsᴛ ʏᴏᴜʀ ʙᴏᴛ.
 </h3>
 
 ━━━━━━━━━━━━━━━━━━━━
