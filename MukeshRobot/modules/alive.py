@@ -17,9 +17,9 @@ PHOTO = [
     "https://telegra.ph/file/bdfd86195221e979e6b20.jpg",
 ]
 
-Mukesh = [
+alive_buttons = [
     [
-        InlineKeyboardButton(text="ᴛᴘᴇᴅɪᴛᴢ", user_id=1666243723),
+        InlineKeyboardButton(text="TP Editz", user_id=1666243723),
         InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
@@ -64,5 +64,5 @@ async def restart(client, m: Message):
   
   » **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{pyver()}`
    ━━━━━━━━━━━━━━━━━━━""",
-        reply_markup=InlineKeyboardMarkup(Mukesh),
+        reply_markup=InlineKeyboardMarkup(alive_buttons),
     )
