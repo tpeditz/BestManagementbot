@@ -21,7 +21,7 @@ async def gps(bot, message):
         ---------github :-tpeditz -----
         ---------telegram : @Tp_Editz-----
         """
-        geolocator = Nominatim(user_agent="legend-Mukesh")
+        geolocator = Nominatim(user_agent="tp-editz-group-manager")
 #         zoom=[0-18]
 
 
@@ -63,7 +63,7 @@ async def distance(bot, message):
     try:
 
         """
-        ---------github :-NOOB-MUKESH -----
+        ---------Maintained by TP Editz -----
         ---------telegram : @itz_legend_coder-----
         """
         distance=(great_circle(x,y).miles)
