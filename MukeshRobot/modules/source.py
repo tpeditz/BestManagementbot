@@ -6,35 +6,33 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import __version__ as o
 from telethon import __version__ as s
 
-from MukeshRobot import OWNER_ID, dispatcher
-from MukeshRobot import pbot as client
-
-Mukesh = "https://te.legra.ph/file/1a72f3770dcb90ee8b3f7.jpg"
+from MukeshRobot import START_IMG, dispatcher, pbot
 
 
-@client.on_message(filters.command(["repo", "source"]))
+@pbot.on_message(filters.command(["repo", "source"]))
 async def repo(client, message):
     await message.reply_photo(
-        photo=Mukesh,
-        caption=f"""**ʜᴇʏ​ {message.from_user.mention()},\n\nɪ ᴀᴍ [{dispatcher.bot.first_name}](t.me/{dispatcher.bot.username})**
+        photo=START_IMG,
+        caption=f"""**ʜᴇʏ {message.from_user.mention()}!**
 
-**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ​ :** [ᴅᴇᴠᴇʟᴏᴘᴇʀ](tg://user?id={OWNER_ID})
-**» ᴩʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`
-**» ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{o}` 
-**» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{s}` 
-**» ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{z}`
+ɪ ᴀᴍ [{dispatcher.bot.first_name}](https://t.me/{dispatcher.bot.username}), ᴀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.
 
-**ɢʀᴏᴜᴘ ✘ ᴄᴏɴᴛʀᴏʟʟᴇʀ sᴏᴜʀᴄᴇ ɪs ɴᴏᴡ ᴩᴜʙʟɪᴄ ᴀɴᴅ ɴᴏᴡ ʏᴏᴜ ᴄᴀɴ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ.**
-""",
+**» ᴍᴀɪɴᴛᴀɪɴᴇʀ:** [TP Editz](https://github.com/tpeditz)
+**» sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ:** [BestManagementbot](https://github.com/tpeditz/BestManagementbot)
+
+**» ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{y()}`
+**» ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ:** `{o}`
+**» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{s}`
+**» ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ:** `{z}`
+
+ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ TP EDITZ.""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
+                    InlineKeyboardButton("• TP EDITZ •", url="https://github.com/tpeditz"),
                     InlineKeyboardButton(
-                        "• ᴏᴡɴᴇʀ ",user_id=OWNER_ID
-                    ),
-                    InlineKeyboardButton(
-                        "• ʀᴇᴘᴏ •",
-                        url="\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D",
+                        "• SOURCE •",
+                        url="https://github.com/tpeditz/BestManagementbot",
                     ),
                 ]
             ]
@@ -43,7 +41,7 @@ async def repo(client, message):
 
 
 __mod_name__ = "Rᴇᴩᴏ"
-_help__ = """
- /repo  ᴛᴏ ɢᴇᴛ ʀᴇᴘᴏ 
- /source ᴛᴏ ɢᴇᴛ ʀᴇᴘᴏ
+__help__ = """
+/repo  - ᴠɪᴇᴡ ᴛʜᴇ ʀᴇᴘᴏsɪᴛᴏʀʏ ᴀɴᴅ ʙᴏᴛ ɪɴғᴏ
+/source - ᴠɪᴇᴡ ᴛʜᴇ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ
 """
